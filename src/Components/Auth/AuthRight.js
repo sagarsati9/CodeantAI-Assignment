@@ -7,7 +7,7 @@ const AuthRight = () => {
     const [isSaas, setIsSaas] = useState(true);
 
     return (
-        <div className=' flex w-full max-w-[400px] md:max-w-full md:1/2 flex-col justify-center items-center p-4 gap-4'>
+        <div className=' flex w-full max-w-[400px] md:max-w-full md:w-1/2 flex-col justify-center items-center p-4 gap-4'>
             <div className='bg-white flex flex-col rounded-xl w-full border'>
                 <div className='border-b flex flex-col p-5 w-full gap-4'>
                     <div className='flex items-center justify-center gap-4'>
@@ -17,7 +17,7 @@ const AuthRight = () => {
                     <div className={`flex justify-center text-2xl font-semibold mt-2`}>
                         Welcome to CodeAnt AI
                     </div>
-                    <div className=''>
+                    <div>
                         <div className=' bg-gray-100/70 border rounded-x'>
                             <button className={`p-3 rounded-xl w-1/2  ${isSaas ? 'bg-[#1570EF] text-white' : ''}`} onClick={() => setIsSaas(true)}>SAAS</button>
                             <button className={`p-3 rounded-xl w-1/2  ${isSaas ? '' : 'bg-[#1570EF] text-white'}`} onClick={() => setIsSaas(false)}>Self Hosted</button>
@@ -27,7 +27,7 @@ const AuthRight = () => {
                 <div className='flex flex-col p-5'>
                     <div className='flex items-center justify-center w-full'>
                         {isSaas ?
-                            (<div className='flex flex-col justify-center items-center m-2'>
+                            (<div className='flex items-center flex-col justify-center w-full gap-2 max-w-[400px]'>
                                 <a href='/dashboard' className='border items-center flex w-full gap-3 p-2 rounded-xl justify-center'>
                                     <img src={'/svg/github.svg'} alt={'github'} className={`w-5`} />
                                     Sign in with Github

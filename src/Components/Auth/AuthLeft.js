@@ -3,9 +3,9 @@ import React from 'react'
 
 const AuthLeft = () => {
     return (
-        <div className=' hidden  md:flex h-full w-1/2 bg-white border-r relative flex-col justify-center items-center'>
-            <img src={'/png/logoFaded.png'} alt='bg-image' className="absolute left-0 bottom-0 w-[260px aspect-square]" />
-            <div className='w-full flex flex-col max-w-[400px]'>
+        <div className='hidden md:flex h-full w-1/2 bg-white border-r relative flex-col justify-center items-center'>
+            <img src={'/png/logoFaded.png'} alt='bg-image' className="absolute left-0 bottom-0 w-[300px] aspect-square" />
+            <div className=' border flex rounded-xl flex-col w-full max-w-[400px]'>
 
                 <div className='flex  gap-2  border-b items-center p-4'>
                     <img src='/svg/logo.svg' alt='logo' className='w-6 h-6'></img>
@@ -27,7 +27,7 @@ const AuthLeft = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col gap-2 p-4 px-8 border bg-white rounded-xl translate-x-[50%] -translate-y-[30px]'>
+            <div className=' border flex flex-col gap-2 p-4 px-8  bg-white rounded-xl translate-x-[50%] -translate-y-[10px]'>
                 <div className=' flex justify-between min-w-40'>
                     <img src='/png/GrapgAuth.png' alt='logo'></img>
                     <div className='flex flex-col'>
