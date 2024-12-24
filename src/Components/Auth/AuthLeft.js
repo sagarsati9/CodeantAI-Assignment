@@ -1,45 +1,54 @@
+import { ArrowLongUpIcon } from '@heroicons/react/16/solid'
 import React from 'react'
 
 const AuthLeft = () => {
     return (
-        <div className='w-2/4'>
-            <div className='flex-col w-full'>
-                <img src={'/png/logoFaded.png'} alt='bg-image' className="absolute left-0 bottom-0 w-[260px]" />
-                <div className='w-full flex flex-col items-center justify-center h-screen'>
-                    <div className='border  rounded-xl mb-4'>
-                        <div className='flex flex-row border-b-2'>
-                            <img src='/svg/logo.svg' alt='logo' className='p-2'></img>
-                            <p className='font-bold p-4'>AI to Detect & Autofix Bad Code</p>
-                        </div>
-                        <div className='flex flex-wrap'>
-                            <div className='m-2 text-center p-4'>
-                                <p className='font-bold'>30+</p>
-                                <p>Language Support</p>
-                            </div>
-                            <div className='m-2 text-center p-4'>
-                                <p className='font-bold'>10k+</p>
-                                <p>Developers</p>
-                            </div>
-                            <div className='m-2 text-center p-4'>
-                                <p className='font-bold'>100k+</p>
-                                <p>Hours Saved</p></div>
-                        </div>
+        <div className=' hidden  md:flex h-full w-1/2 bg-white border-r relative flex-col justify-center items-center'>
+            <img src={'/png/logoFaded.png'} alt='bg-image' className="absolute left-0 bottom-0 w-[260px aspect-square]" />
+            <div className='w-full flex flex-col max-w-[400px]'>
+
+                <div className='flex  gap-2  border-b items-center p-4'>
+                    <img src='/svg/logo.svg' alt='logo' className='w-6 h-6'></img>
+                    <span className='font-semibold'>AI to Detect & Autofix Bad Code</span>
+                </div>
+                <div className='flex gap-4 justify-between items-center p-4'>
+                    <div className='flex flex-col items-center'>
+                        <span className='font-semibold'>30+</span>
+                        <span className='text-sm'>Language Support</span>
                     </div>
-                    <div className='flex gap-2 p-4 px-8 border bg-white rounded-xl translate-x-[50%] -translate-y-[30px]'>
-                        <div className='m-2'>
-                            <img src='/png/GrapgAuth.png' alt='logo'></img>
-                            <p className='font-bold'>Issues Fixed</p>
-                            <p className='font-bold'>500k+</p>
-                        </div>
-                        <div className='m-2'>
-                            <p>⬆️14%</p>
-                            <p>This week</p>
-                        </div>
+                    <div className='flex flex-col items-center'>
+                        <span className='font-semibold'>10k+</span>
+                        <span className='text-sm'>Developers</span>
+                    </div>
+                    <div className='flex flex-col items-center'>
+                        <span className='font-semibold'>100k+</span>
+                        <span className='text-sm'>Hours saved</span>
                     </div>
                 </div>
             </div>
-        </div>
-    )
-}
 
-export default AuthLeft
+            <div className='flex flex-col gap-2 p-4 px-8 border bg-white rounded-xl translate-x-[50%] -translate-y-[30px]'>
+                <div className=' flex justify-between min-w-40'>
+                    <img src='/png/GrapgAuth.png' alt='logo'></img>
+                    <div className='flex flex-col'>
+                        <div className='flex items-center text-primary'>
+                            <ArrowLongUpIcon className='w-5' />
+                            14%
+                        </div>
+                        <div className='font-light text-xs'>
+                            This week
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div className='flex flex-col'>
+                        <span className='font-semibold'>Issues Fixed</span>
+                        <span className='font-semibold text-2xl'>500K+</span>
+                    </div>
+                </div>
+            </div>
+        </div >
+    );
+};
+
+export default AuthLeft;
